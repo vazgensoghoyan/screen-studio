@@ -31,12 +31,13 @@ body {
   align-items: center;
 }
 
-.header__logo {
+.logo {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
-.header__logo img {
+.logo img {
   width: 24px;
   height: 24px;
 }
@@ -46,17 +47,14 @@ body {
   gap: 32px;
 }
 
-.header__nav a {
+.link {
   transition: all 0.1s ease-in-out;
 }
-.header__nav a:hover {
+.link:hover {
   color: #cdb5ff;
 }
-.header__nav a:active {
+.link:active {
   color: #9563ff;
-}
-.header__nav a.btn:hover {
-  color: #fff;
 }
 
 /* ----------------------------- BUTTON ----------------------------- */
@@ -77,6 +75,7 @@ body {
 /* ----------------------------- WELCOME SECTION ----------------------------- */
 .welcome {
   min-height: calc(100vh - 96px);
+  margin-bottom: 300px;
   text-align: center;
 }
 
@@ -101,4 +100,23 @@ body {
 .welcome a {
   display: inline-block;
   padding: 15px;
+}
+
+/* ----------------------------- FOOTER ----------------------------- */
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer li + li {
+  margin-top: 15px;
+}
+
+.footer__copy .logo {
+  margin-bottom: 15px;
+}
+
+.footer__copy > p {
+  font-size: 13px;
+  line-height: 1.5;
 }
