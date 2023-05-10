@@ -109,6 +109,11 @@ section {
 /* ----------------------------- VIDEOS ----------------------------- */
 .title-wrapper {
   width: 850px;
+  text-align: center;
+}
+
+.videos .title-wrapper {
+  text-align: left;
 }
 
 .title-wrapper h2 {
@@ -203,14 +208,58 @@ section {
   align-items: center;
 }
 
-.designed .title-wrapper {
-  text-align: center;
-}
-
 .designed img {
   margin-top: 31px;
   width: 480px;
   height: 125px;
+}
+
+
+/* ----------------------------- USER COMMENTS SECTION ----------------------------- */
+.comments .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments .title-wrapper {
+  align-self: center;
+  margin-bottom: 60px;
+}
+
+.comments .comment-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.comments p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.comments .comment {
+  width: 520px;
+  padding: 30px;
+  background: #13151B;
+  border: 1px solid #1B1E26;
+  border-radius: 6px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user img {
+  margin-right: 8px;
+  width: 48px;
+  height: 48px;
+}
+
+.user .username::before {
+  content: "@";
 }
 
 
