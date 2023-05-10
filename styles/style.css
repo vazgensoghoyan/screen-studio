@@ -10,9 +10,13 @@ body {
 }
 
 .container {
-  max-width: 1152px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+section {
+  margin-bottom: 250px;
 }
 
 .hide {
@@ -75,7 +79,6 @@ body {
 /* ----------------------------- WELCOME SECTION ----------------------------- */
 .welcome {
   min-height: calc(100vh - 96px);
-  margin-bottom: 300px;
   text-align: center;
 }
 
@@ -102,10 +105,105 @@ body {
   padding: 15px;
 }
 
-/* ----------------------------- FOOTER ----------------------------- */
-.footer .container {
+
+/* ----------------------------- VIDEOS ----------------------------- */
+.title-wrapper {
+  width: 850px;
+}
+
+.title-wrapper h2 {
+  font-size: 42px;
+  line-height: 1.25;
+}
+
+.title-wrapper h3 {
+  margin-top: 11px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.videos-wrapper {
+  margin-top: 90px;
+}
+
+.videos-wrapper ul {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 128px;
+}
+
+.videos-wrapper li {
+  width: 490px;
+}
+
+.videos-wrapper li:nth-child(2n):not(.not-ready) {
+  margin-top: 150px;
+}
+
+.videos-wrapper li h3 {
+  margin-top: 32px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.videos-wrapper li p {
+  margin-top: 9px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 490px;
+  height: 270px;
+  background: #13151B;
+  border-radius: 20px;
+}
+
+.small-video {
+  height: 270px;
+}
+
+.big-video {
+  height: 470px;
+}
+
+.circle {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(8, 9, 13, 0.8);
+  border-radius: 1000px;
+}
+
+.not-ready .yet {
+  text-align: center;
+  max-width: 103px;
+  padding: 8px 2px;
+  font-size: 13px;
+  background: rgba(98, 29, 237, 0.2);
+  border-radius: 50px;
+  color: #A37BF4;
+}
+
+.videos-wrapper .not-ready h3 {
+  margin-top: 7px;
+}
+
+/* ----------------------------- FOOTER ----------------------------- */
+.footer {
+  margin-bottom: 70px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 230px;
 }
 
 .footer li + li {
