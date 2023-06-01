@@ -218,18 +218,19 @@ section {
 /* ----------------------------- USER COMMENTS SECTION ----------------------------- */
 .comments .container {
   display: flex;
+  align-items: center;
   flex-direction: column;
+  gap: 60px;
 }
 
-.comments .title-wrapper {
-  align-self: center;
-  margin-bottom: 60px;
+.comments .comments-wrapper {
+  display: flex;
+  gap: 20px;
 }
 
-.comments .comment-wrapper {
+.comments-column {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -262,6 +263,35 @@ section {
   content: "@";
 }
 
+.comments .note {
+  font-size: 13px;
+}
+
+
+/* ----------------------------- PLANS ----------------------------- */
+.plans {}
+
+.container {}
+
+.title-wrapper {}
+
+.plans-wrapper {}
+
+.plan {}
+
+.standart-plan {}
+
+.plan__name {}
+
+.plane__price {}
+
+.plan__price-note {}
+
+.plan__inclusions {}
+
+.extented-plan {}
+
+.teams-plan {}
 
 
 /* ----------------------------- FOOTER ----------------------------- */
