@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
 
+  <script src="scripts/anchors.js" defer></script>
+  <script src="scripts/btn-up.js" defer></script>
+
   <link rel="icon" href="images/logo.png" type="image/icon-type">
   <title>Screen Studio</title>
 </head>
@@ -23,10 +26,13 @@
 
       <nav class="header__nav">
         <ul>
-          <li><a href="#!" class="link">Pricing</a></li>
+          <li><a href="#pricing" class="link anchor">Pricing</a></li>
           <li><a href="#!" class="link">Roadmap</a></li>
-          <li><a href="#!" class="link">Twitter</a></li>
-          <li><a href="#!" class="btn">Download</a></li>
+          <li><a href="https://t.me/iheaytdg" class="link" target="_blank">Twitter</a></li>
+          <li>
+            <a href="https://www.screen.studio/download" class="btn" 
+            target="_blank" title="Вы будете перенеправлены на настоящий сайт">Download</a>
+          </li>
         </ul>
       </nav>
       
@@ -45,7 +51,7 @@
           <h3>Promo videos of your digital product as easy as taking a screenshot.</h3>
         </div>
 
-        <a href="#!" class="btn">Download Screen Studio</a>
+        <a href="https://www.screen.studio/download" class="btn" target="_blank">Download Screen Studio</a>
 
       </div>
     </section>
@@ -447,7 +453,7 @@
       </div>
     </section>
 
-    <section class="plans">
+    <section class="plans" id="pricing">
       <div class="container">
 
         <div class="title-wrapper">
@@ -609,5 +615,7 @@
     </div>
   </footer>
 
+  
+  <div class="btn btn-up hide"></div>
 </body>
 </html>
