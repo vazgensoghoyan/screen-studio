@@ -163,6 +163,7 @@ section + section, footer {
   margin-top: 9px;
   font-size: 17px;
   line-height: 1.5;
+  color: #adadad;
 }
 
 .video {
@@ -190,7 +191,14 @@ section + section, footer {
   width: 64px;
   height: 64px;
   background: rgba(8, 9, 13, 0.8);
-  border-radius: 1000px;
+  border-radius: 50%;
+}
+
+.circle img {
+  width: 20px;
+  height: 24px;
+
+  transform: translate(1px);
 }
 
 .not-ready .yet {
@@ -485,7 +493,7 @@ section + section, footer {
   }
 
   section + section, footer {
-    margin-top: calc(50px + (250 - 50) * (100vw - 320px) / (1200 - 320));
+    margin-top: calc(150px + (250 - 150) * (100vw - 320px) / (1200 - 320));
   }
 
   .container {
@@ -566,7 +574,6 @@ section + section, footer {
   }
   
   .videos-wrapper li p {
-    margin-top: 9px;
     margin-top: calc(3px + (9 - 3) * (100vw - 320px) / (1200 - 320));
     font-size: calc(10px + (17 - 10) * (100vw - 320px) / (1200 - 320));
   }
@@ -582,5 +589,26 @@ section + section, footer {
   
   .big-video {
     height: calc(240px + (470 - 240) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .circle {
+    width: calc(32px + (64 - 32) * (100vw - 320px) / (1200 - 320));
+    height: calc(32px + (64 - 32) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .circle img {
+    width: calc(10px + (20 - 10) * (100vw - 320px) / (1200 - 320));
+    height: calc(12px + (24 - 12) * (100vw - 320px) / (1200 - 320));
+
+    transform: translate(0px);
+  }
+  /* TOOOOOOOOOOOOODOOOOOOOOOOOOOOOO */
+  /* ----------------------------- NOT READY YET ----------------------------- */
+
+  /* ----------------------------- DESIGNED FOR MACOS ----------------------------- */
+  .designed img {
+    margin-top: 31px;
+    width: calc(288px + (480 - 288) * (100vw - 320px) / (1200 - 320));
+    height: calc(75px + (125 - 75) * (100vw - 320px) / (1200 - 320));
   }
 }
