@@ -9,13 +9,32 @@ body {
 }
 
 .container {
-  max-width: 1170px;
-  padding: 0 15px;
+  max-width: 1150px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 section + section, footer {
   margin-top: 250px;
+}
+
+.title-wrapper {
+  width: 850px;
+  text-align: center;
+}
+
+.title-wrapper h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.title-wrapper h3 {
+  margin-top: 11px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #adadad;
 }
 
 .hide {
@@ -76,7 +95,7 @@ section + section, footer {
   background-color: #5419cc;
 }
 
-/* ----------------------------- WELCOME SECTION ----------------------------- */
+/* ---------------------------- WELCOME SECTION ----------------------------- */
 .welcome {
   min-height: calc(100vh - 96px);
   text-align: center;
@@ -111,27 +130,8 @@ section + section, footer {
 
 
 /* ----------------------------- VIDEOS ----------------------------- */
-.title-wrapper {
-  width: 850px;
-  text-align: center;
-}
-
 .videos .title-wrapper {
   text-align: left;
-}
-
-.title-wrapper h2 {
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.title-wrapper h3 {
-  margin-top: 11px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.5;
-  color: #adadad;
 }
 
 .videos-wrapper {
@@ -476,4 +476,111 @@ section + section, footer {
 .footer__copy > p {
   font-size: 13px;
   line-height: 1.5;
+}
+
+/* ----------------------------- ADAPTATION ----------------------------- */
+@media (max-width: 1200px) {
+  body {
+    font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1200 - 320));
+  }
+
+  section + section, footer {
+    margin-top: calc(50px + (250 - 50) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .container {
+    padding: 0 calc(12px + (20 - 12) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .title-wrapper {
+    width: 850px;
+    width: calc(250px + (850 - 250) * (100vw - 320px) / (1200 - 320));
+  }
+  
+  .title-wrapper h2 {
+    font-size: calc(18px + (42 - 18) * (100vw - 320px) / (1200 - 320));
+  }
+  
+  .title-wrapper h3 {
+    font-size: calc(12px + (24 - 12) * (100vw - 320px) / (1200 - 320));
+  }
+
+  /* ----------------------------- HEADER ----------------------------- */
+  .header {
+    padding: calc(25px + (36 - 25) * (100vw - 320px) / (1200 - 320)) 0;
+  }
+
+  .logo img {
+    width: calc(18px + (24 - 18) * (100vw - 320px) / (1200 - 320));
+    height: calc(18px + (24 - 18) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .header__nav ul {
+    gap: calc(10px + (32 - 10) * (100vw - 320px) / (1200 - 320));
+  }
+  .header .btn {
+    display: none;
+  }
+
+  /* ---------------------------- WELCOME SECTION ----------------------------- */
+  .welcome img {
+    margin: calc(40px + (85 - 40) * (100vw - 320px) / (1200 - 320)) 0;
+    width: calc(90px + (127 - 90) * (100vw - 320px) / (1200 - 320));
+    height: calc(90px + (127 - 90) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .welcome .title-wrapper h2 {
+    font-size: calc(27px + (64 - 27) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .welcome .title-wrapper h3 {
+    font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1200 - 320));
+  }
+
+  /* ----------------------------- VIDEOS ----------------------------- */
+  .videos .title-wrapper {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .videos-wrapper {
+    margin-top: calc(30px + (90 - 30) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .videos-wrapper ul {
+    justify-content: center;
+    gap: calc(40px + (80 - 40) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .videos-wrapper li {
+    width: calc(250px + (490 - 250) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .videos-wrapper li:nth-child(2n):not(.not-ready) {
+    margin-top: 0;
+  }
+
+  .videos-wrapper li h3 {
+    margin-top: calc(10px + (32 - 10) * (100vw - 320px) / (1200 - 320));
+    font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1200 - 320));
+  }
+  
+  .videos-wrapper li p {
+    margin-top: 9px;
+    margin-top: calc(3px + (9 - 3) * (100vw - 320px) / (1200 - 320));
+    font-size: calc(10px + (17 - 10) * (100vw - 320px) / (1200 - 320));
+  }
+
+  .video {
+    width: calc(250px + (490 - 250) * (100vw - 320px) / (1200 - 320));
+    height: calc(140px + (270 - 140) * (100vw - 320px) / (1200 - 320));
+  }
+  
+  .small-video {
+    height: calc(140px + (270 - 140) * (100vw - 320px) / (1200 - 320));
+  }
+  
+  .big-video {
+    height: calc(240px + (470 - 240) * (100vw - 320px) / (1200 - 320));
+  }
 }
