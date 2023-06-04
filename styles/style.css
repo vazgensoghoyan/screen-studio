@@ -491,7 +491,7 @@ section + section, footer {
 
 .footer__copy > p {
   font-size: 13px;
-  line-height: 1.5;
+  color: #adadad;
 }
 
 /* ----------------------------- ADAPTATION ----------------------------- */
@@ -619,13 +619,10 @@ section + section, footer {
     height: calc(75px + (125 - 75) * (100vw - 320px) / (1200 - 320));
   }
 
-  /* TOOOOOOOOOOOOOOOOOODOOOOOOOOOOOOOOOOOOO */
-  /* исправить комменты */
   /* ----------------------------- USER COMMENTS SECTION ----------------------------- */
   .comments .comments-wrapper {
     margin-top: 60px;
     margin-top: calc(30px + (60 - 30) * (100vw - 320px) / (1200 - 320));
-    flex-direction: column;
   }
 
   .comments-column {
@@ -634,11 +631,10 @@ section + section, footer {
 
   .comments p {
     font-size: calc(10px + (17 - 10) * (100vw - 320px) / (1200 - 320));
-    line-height: 1.5;
   }
   
   .comments .comment {
-    width: calc(300px + (520 - 300) * (100vw - 320px) / (1200 - 320));
+    width: calc(470px + (520 - 470) * (100vw - 1000px) / (1200 - 320));
     padding: calc(15px + (30 - 15) * (100vw - 320px) / (1200 - 320));
   }
 
@@ -660,18 +656,14 @@ section + section, footer {
   /* испраааавь планы так же как коменты */
   /* ----------------------------- PLANS ----------------------------- */
   .plans-wrapper {
-    margin-top: 65px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+    /*margin-top: 65px;*/
+    gap: calc(15px + (32 - 15) * (100vw - 800px) / (1200 - 800));
   }
 
   .plan {
-    width: 280px;
-    height: 400px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    width: calc(240px + (365 - 240) * (100vw - 800px) / (1200 - 800));
+    height: calc(440px + (570 - 440) * (100vw - 800px) / (1200 - 800));
+    padding: calc(20px + (50 - 20) * (100vw - 800px) / (1200 - 800));
   }
 
   .plan__name {
@@ -757,6 +749,7 @@ section + section, footer {
                       calc(10px + (21 - 10) * (100vw - 320px) / (1200 - 320));
   }
 
+  /* TOOOOOOOOOOOOOOOOOODOOOOOOOOOOOOOOOOOOO */
   /* ----------------------------- FOOTER ----------------------------- */
   .footer {
     margin-bottom: 50px;
@@ -764,7 +757,41 @@ section + section, footer {
   
   .footer .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .comments .comments-wrapper {
+    flex-direction: column;
+  }
+
+  .comments .comment {
+    width: 90vw;
+  }
+
+  .comments .note {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .plans-wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .plan {
+    width: 60vw;
+    height: 440px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .plan {
+    width: 80vw;
+    height: 400px;
   }
 }
