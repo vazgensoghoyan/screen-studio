@@ -441,8 +441,6 @@ section + section, footer {
   100%  { opacity: 0.55; transform:  translate(0, 0); }
 }
 
-
-
 /* ----------------------------- BTN-UP ----------------------------- */
 .btn-up {
   padding: 0;
@@ -478,7 +476,7 @@ section + section, footer {
 .footer .container {
   display: flex;
   justify-content: flex-start;
-  gap: 230px;
+  gap: 200px;
 }
 
 .footer li + li {
@@ -652,8 +650,6 @@ section + section, footer {
     font-size: calc(8px + (13 - 8) * (100vw - 320px) / (1200 - 320));
   }
 
-  /* TOOOOOOOOOOOOOOOOOODOOOOOOOOOOOOOOOOOOO */
-  /* испраааавь планы так же как коменты */
   /* ----------------------------- PLANS ----------------------------- */
   .plans-wrapper {
     /*margin-top: 65px;*/
@@ -748,18 +744,6 @@ section + section, footer {
     background-size:  calc(8px + (16 - 8) * (100vw - 320px) / (1200 - 320))
                       calc(10px + (21 - 10) * (100vw - 320px) / (1200 - 320));
   }
-
-  /* TOOOOOOOOOOOOOOOOOODOOOOOOOOOOOOOOOOOOO */
-  /* ----------------------------- FOOTER ----------------------------- */
-  .footer {
-    margin-bottom: 50px;
-  }
-  
-  .footer .container {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 50px;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -775,6 +759,11 @@ section + section, footer {
   .comments .note {
     width: 80vw;
   }
+  
+  .footer .container {
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 800px) {
@@ -787,6 +776,14 @@ section + section, footer {
     width: 60vw;
     height: 440px;
     padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer .container {
+    padding-left: 10vw;
+    flex-direction: column-reverse;
+    gap: 50px;
   }
 }
 
